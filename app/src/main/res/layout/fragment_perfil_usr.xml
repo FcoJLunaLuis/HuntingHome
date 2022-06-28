@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#e3e3e3"
+    tools:context=".vistas.PerfilUsr">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvperfil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_black"
+            android:text="Perfil"
+            android:textColor="@android:color/background_dark"
+            android:textSize="25dp"
+            android:layout_marginBottom="5dp"/>
+        <ImageView
+            android:id="@+id/ivImgUsrPerfil"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/tvNomUsrPerfil"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:fontFamily="@font/roboto_black"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Nombre Usuario"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivEdtPerfil"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/btnEdtPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAlignment="textStart"
+                android:background="@android:color/transparent"
+                android:text="Editar Perfil"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivResMeGusta"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/btnResMeGusta"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAlignment="textStart"
+                android:background="@android:color/transparent"
+                android:text="Residencias que me gustan"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivVerMisRes"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/btnVerMisRes"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAlignment="textStart"
+                android:background="@android:color/transparent"
+                android:text="Ver mis residencias"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

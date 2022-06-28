@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.com.yh.huntinghome">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.main.prueba"></activity>
+        <activity android:name=".vistas.DetallesResidencia" />
+        <activity android:name=".vistas.RegistroResidencia" />
+        <activity android:name=".vistas.ItemsResidenciasPropias" />
+        <activity android:name=".vistas.ListaResidenciasPropias" />
+        <activity android:name=".vistas.EdtPerfil" />
+        <activity android:name=".list_item_residencias" />
+        <activity android:name=".vistas.FragmentHome" />
+        <activity
+            android:name=".vistas.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".logica.Registro" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.RegistroResidencia">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvRegistroRes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/roboto_black"
+            android:text="Registrar nueva residencia"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tvTipoResReg"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="¿Que quiere poner en renta?"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:id="@+id/rgTipRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbRes"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Residencia"
+                    android:layout_weight=".5"/>
+
+                <RadioButton
+                    android:id="@+id/rbHabit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Habitación"
+                    android:layout_weight=".5"/>
+
+            </LinearLayout>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etNumHabit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#000000"
+            android:hint="Número de habitaciones"/>
+
+
+        <EditText
+            android:id="@+id/etCalleRes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#000000"
+            android:hint="Calle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etNumIntRes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="#000000"
+                android:hint="Número Interior"
+                android:layout_weight=".5"/>
+            <EditText
+                android:id="@+id/etNumExtRes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="#000000"
+                android:hint="Número Exterior"
+                android:layout_weight=".5"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etColRes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#000000"
+            android:hint="Colonia"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etMunRes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="#000000"
+                android:hint="Municipio"
+                android:layout_weight=".5"/>
+            <EditText
+                android:id="@+id/etEstRes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="#000000"
+                android:hint="Estado"
+                android:layout_weight=".5"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvServRes"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Servicios con los que cuenta"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbServAgua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agua"
+                android:layout_weight=".33"/>
+
+            <CheckBox
+                android:id="@+id/cbServElec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Electricidad"
+                android:layout_weight=".33"/>
+
+            <CheckBox
+                android:id="@+id/cbServGas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gas"
+                android:layout_weight=".33"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbServDrenaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drenaje"
+                android:layout_weight=".33"/>
+
+            <CheckBox
+                android:id="@+id/cbServInternet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Internet"
+                android:layout_weight=".33"/>
+
+            <CheckBox
+                android:id="@+id/cbServCable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cable"
+                android:layout_weight=".33"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbServTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefono"
+                android:layout_weight=".33"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etDetallesResidencia"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Detalles de residencia"
+            android:inputType="textMultiLine"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvMasc"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="¿Permite mascotas?"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_weight=".33"/>
+
+            <CheckBox
+                android:id="@+id/cbMasc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".77"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCuot"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="¿Tiene cuota inicial?"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_weight=".33"/>
+
+            <CheckBox
+                android:id="@+id/cbCuot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".77"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio" />
+
+        <Button
+            android:id="@+id/btnGuardarRes"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:text="Guardar" />
+
+    </LinearLayout>
+
+</ScrollView>

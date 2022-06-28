@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#e3e3e3"
+    tools:context=".vistas.DetallesResidencia">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/image_round_style"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivImgUsrDet"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnNameUsrDet"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="20dp"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:background="@android:color/transparent"
+                android:text="nombre usuario"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ivImgResidenciaDet"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:padding="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvMunicipioResDet"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#000000"
+            android:text="Municipio"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tvEstadoResDet"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#000000"
+            android:text="Estado"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvComunidadResDet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="#000000"
+        android:text="Comunidad"
+        android:paddingLeft="10dp"
+        android:textSize="15sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10sp">
+
+        <TextView
+            android:id="@+id/tvTipoResDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#000000"
+            android:text="TipoResidencia"
+            android:textSize="15sp"
+            android:layout_weight=".50"/>
+        <TextView
+            android:id="@+id/tvPrecioResDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#000000"
+            android:text="Precio"
+            android:textSize="15sp"
+            android:layout_weight=".50"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResDet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
+        android:textColor="#000000"
+        android:text="Detalles"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvDet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="#000000"
+        android:paddingLeft="10dp"
+        android:text="Detalles dadadad ad ad asd ad ad asd as da sd asd as da sdadsada da das dadasdas"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Ubicación"
+            android:background="@drawable/ubication_style_button"
+            android:layout_weight=".60"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btnMsg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Mensaje"
+            android:background="@drawable/message_style_button"
+            android:layout_weight=".60"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+</LinearLayout>
